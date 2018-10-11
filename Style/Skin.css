@@ -1,0 +1,643 @@
+﻿/* Author:tcdos */
+
+/*全局样式*/
+*{
+	padding:0px;
+	margin:0px;
+}
+body{
+	margin:0px;
+	padding:0px;
+	background-color:#EEE;
+}
+body,td,th{
+	color:#565656;
+	font-size:12px;
+	font-family:"微软雅黑",Tahoma;
+}
+a:link{
+	color:#565656;
+	text-decoration: none;
+}
+a:visited{
+	color:#565656;
+	text-decoration: none;
+}
+a:hover{
+	color:#ff6600;
+	text-decoration: none;
+}
+a:active{
+	color:#565656;
+	text-decoration: none;
+}
+img{
+	border: 0px;
+}
+input,form,textarea,option{
+	color:#666;
+	border:0px;
+	background:none;
+	font-family:"微软雅黑",Tahoma;
+    outline: none;
+}
+input:focus,input.focus{
+	color:#666;
+	border:1px solid #1FB915;
+	background-color:#FFFFCC;
+}
+optgroup{
+	color:#BBB;
+	font-size:10px;
+	font-family:"微软雅黑",Tahoma;
+}
+select,option{
+	font-size:12px;
+	color:#666;
+	font-family:"微软雅黑",Tahoma;
+}
+.clear{
+	clear: both;
+}
+.KeyWords{
+	color:#FF6F00;
+}
+#tcCount{
+	display:none;
+}
+.RedTxt{
+	color:#FF6600;
+}
+.GrayTxt{
+	color:#999;
+}
+/*登录*/
+#LoginPannel{
+	margin:100px auto;
+	padding:1px;
+	width:600px;
+	height:320px;
+	background-color:#FFF;
+	border:1px solid #D6D6D6;
+}
+#LoginHead{
+	margin:0px auto;
+	padding:40px 0px 15px 0px;
+	width:600px;
+	height:65px;
+	line-height:65px;
+	text-align:center;
+	font-size:14px;
+	background-color:#F5F5F5;
+}
+#LoginHead a{
+	margin:0px auto;
+	display:block;
+	width:273px;
+	height:65px;
+	background-image:url(../Images/logo.jpg);
+}
+#LoginBody{
+	margin:0px auto;
+	width:600px;
+	height:200px;
+	background-color:#F5F5F5;
+}
+.LoginFromItem{
+	margin:0px auto;
+	padding:5px 0px;
+	width:600px;
+	height:22px;
+	text-align:center;
+	background-color:#F5F5F5;
+}
+.LoginFromItemTxt{
+	float:left;
+	padding:0px 5px 0px 0px;
+	width:235px;
+	height:22px;
+	line-height:22px;
+	text-align:right;
+}
+.LoginFromItemInput{
+	float:left;
+	width:360px;
+	height:22px;
+	line-height:22px;
+	text-align:left;
+}
+/*表单元素*/
+.inputText{
+	padding:2px;
+	width:150px;
+	font-size:12px;
+	font-family:"微软雅黑",Tahoma;
+	border-top:1px solid #7C7C7C;
+	border-left:1px solid #7C7C7C;
+	border-right:1px solid #DDD;
+	border-bottom:1px solid #DDD;
+	background-color:#FFF;	
+}
+.inputText:focus,inputText.focus{
+	border:1px solid #1FB915;
+	background-color:#FFFFCC;
+}
+.btnSubmit{
+	color:#FFF;
+	font-size:12px;
+	padding:4px 8px;
+	background:#F8941D;
+	border-top:1px solid #FBAF5D;
+	border-left:1px solid #FBAF5D;
+	border-right:1px solid #F26522;
+	border-bottom:1px solid #F26522;
+}
+.btnCancel{
+	color:#FFF;
+	font-size:12px;
+	padding:4px 8px;
+	background:#616161;
+	border-top:1px solid #747474;
+	border-left:1px solid #747474;
+	border-right:1px solid #505050;
+	border-bottom:1px solid #505050;
+}
+/*页面*/
+#CashPage{
+	width:100%;
+}
+#MainPage{
+	margin:40px auto;
+	padding:1px;
+	width:866px;
+	background-color:#FFF;
+	border:1px solid #D6D6D6;
+}
+#MainContain{
+	margin:0px auto;
+	width:866px;
+	background-color:#F5F5F5;
+}
+/*页面*/
+#MainHead{
+	margin:0px auto;
+	padding:0px 0px 5px 0px;
+	width:866px;
+	height:85px;
+}
+#MainBody{
+	margin:0px auto;
+	width:798px;
+}
+#MainFoot{
+	margin:0px auto;
+	padding:10px 0px 30px 0px;
+	width:798px;
+	height:30px;
+	line-height:30px;
+	color:#888;
+	text-align:center;
+}
+/*Logo*/
+#MainLogo{
+	float:left;
+	width:273px;
+	height:85px;
+	background:url(../Images/logo.jpg) 0px 20px no-repeat;
+}
+#MainLogo a{
+	margin:38px 30px 30px 30px;
+	display:block;
+	width:213px;
+	height:30px;
+	
+}
+/*导航*/
+#MainNav{
+	float:left;
+	width:593px;
+	height:85px;
+}
+#MainNav ul{
+	margin:40px 0px 0px 20px;
+	width:560px;
+	height:25px;
+	list-style:none;
+}
+#MainNav ul li{
+	float:left;
+	width:80px;
+	height:25px;
+}
+#MainNav ul li a{
+	display:block;
+	width:79px;
+	height:25px;
+	line-height:25px;
+	color:#FFF;
+	text-align:center;
+	background-color:#616161;
+	border-right:1px solid #FFF;
+}
+#MainNav ul li a:hover{
+	color:#FFF;
+	background-color:#409508;
+}
+#MainNav ul li a.on{
+	color:#FFF;
+	background-color:#409508;
+}
+#MainNav ul li.Add a{
+	color:#FFF;
+	background-color:#409508;
+}
+#MainNav ul li.Add a:hover{
+	color:#FFF;
+	font-weight:bold;
+	background-color:#616161;
+}
+#MainNav ul li.Out a{
+	color:#FFF;
+	width:60px;
+	background-color:#616161;
+}
+#MainNav ul li.Out a:hover{
+	color:#FFF;
+	background-color:#409508;
+}
+/*WelTip*/
+#MainWel{
+	margin:0px auto 10px auto;
+	padding:4px 8px;
+	width:780px;
+	line-height:20px;
+	color:#777;
+	border:1px solid #DDD;
+	background-color:#FFF;
+}
+.MainSelect{
+	padding:0px 0px 0px 130px;
+}
+.MainSelect a{
+	color:#ff6600;
+}
+.MainSelectForm{
+	display:block;
+	margin:5px 0px 0px 0px;
+	padding:4px 0px;
+	text-align:right;
+	border-top:1px dashed #DDD;
+}
+/*统计概况*/
+.MainCount_in{
+	color:#398308;
+}
+.MainCount_out{
+	color:#CC6600;
+}
+.MainCount_total{
+	color:#0066FF;
+}
+/*数据*/
+#MainList{
+	margin:0px auto;
+	width:798px;
+}
+.DataTab{
+	margin:0px auto;
+	border-collapse:collapse;
+	text-align:center;
+	background-color:#FFF;
+}
+.DataTab th{	
+	border:1px solid #DDD;
+	padding:5px 0px;
+	font-weight:normal;		
+}
+.DataTab thead th{
+	font-weight:bold;	
+	background-image:url(../Images/tabbg.gif);
+}
+.minTxt{
+	font-size:10px;
+	color:#999;
+}
+.min_DataTab{
+	margin:0px auto 1px auto;
+	text-align:center;
+}
+.min_DataTab td{
+	/*border-bottom:1px dashed #DDD;*/
+	padding:5px 0px;
+	font-weight:normal;		
+}
+.min_DataTab .dtLeft{
+	padding:0px 5px;
+	text-align:left;
+}
+.DataTab img{
+	padding:0px 2px;
+}
+#PageList{
+	margin:0px auto;
+	padding:10px 5px;
+	width:788px;
+	height:25px; 
+	line-height:25px; 
+	text-align:center;
+}
+#tooltip{
+	position:absolute;
+	padding:5px 10px;
+	line-height:20px;
+	border:1px solid #409508;
+	background:#f7f5d1;
+	color:#333;
+	display:none;
+}
+.ListTip{
+	margin:0px auto 10px auto;
+	padding:4px 8px;
+	width:780px;
+	height:20px;
+	line-height:20px;
+	color:#777;
+	text-align:center;
+	border:1px dashed #409508;
+	background-color:#F7F5D1;
+}
+/*分类*/
+.MainClassList{
+	float:left;
+	margin:0px 5px 15px 0px;
+	width:170px;
+	border:1px solid #DDD;
+	background-color:#FFF;
+}
+.MainClassListHead{
+	width:170px;
+	height:25px;
+	line-height:25px;
+	font-size:12px;
+	text-align:center;
+	background-color:#EAEAEA;
+	border-bottom:1px solid #DDD;
+}
+.MainClassListBdoy{
+	padding:5px 0px;
+	width:170px;
+}
+.MainClassListItemTxt{
+	float:left;
+	padding:0px 0px 0px 25px;
+	width:100px;
+	height:25px;
+	line-height:25px;
+	background:url(../Images/select.gif) no-repeat;
+}
+.MainClassListItemEdit{
+	float:left;
+	width:20px;
+	height:23px;
+	line-height:23px;
+	background:url(../Images/edit.gif) center no-repeat;
+}
+.MainClassListItemEdit a{
+	display:block;
+	width:20px;
+	height:23px;
+}
+.MainClassListItemDel{
+	float:left;
+	width:20px;
+	height:23px;
+	line-height:23px;
+	background:url(../Images/del.gif) center no-repeat;
+}
+.MainClassListItemDel a{
+	display:block;
+	width:20px;
+	height:23px;
+}
+/*类别编辑*/
+#MainAddClassForm{
+	float:left;
+	margin:0px 0px 15px 0px;
+	width:265px;
+	border:1px solid #DDD;
+	background-color:#FFF;
+}
+.MainAddClassFormHead{
+	width:265px;
+	height:25px;
+	line-height:25px;
+	font-size:12px;
+	text-align:center;
+	background:url(../Images/add.gif) 70px 5px no-repeat;
+	border-bottom:1px solid #DDD;
+}
+.EditFromItem{
+	margin:0px auto;
+	padding:2px 0px 3px 0px;
+	width:250px;
+	height:25px;
+	text-align:center;
+}
+.EditFromItemSpace{
+	height:25px;
+}
+/*支付方式*/
+#MainAddPayForm{
+	float:left;
+	margin:0px 0px 15px 0px;
+	width:265px;
+	border:1px solid #DDD;
+	background-color:#FFF;
+}
+.MainAddPayFormHead{
+	width:265px;
+	height:25px;
+	line-height:25px;
+	font-size:12px;
+	text-align:center;
+	background:url(../Images/add.gif) 60px 5px no-repeat;
+	border-bottom:1px solid #DDD;
+}
+/*记账*/
+#MainAddCashForm{
+	margin:0px auto;
+	padding:5px;
+	width:786px;
+	border:1px solid #DDD;
+	background-color:#FFF;
+}
+.MainAddCashFormItem{
+	margin:0px auto;
+	padding:30px 0px;
+	width:500px;
+}
+#MainAddCashForm label{
+	margin-top:7px;
+	margin-bottom:7px;
+	float: left; 
+	width: 70px;
+	text-align:right;
+}
+#MainAddCashForm br{ 
+	clear:left; 
+}
+.AddBtn{
+	margin-top:10px;
+	margin-left:72px;
+	color:#FFF;
+	font-size:12px;
+	padding:4px 8px;
+	background:#F8941D;
+	border-top:1px solid #FBAF5D;
+	border-left:1px solid #FBAF5D;
+	border-right:1px solid #F26522;
+	border-bottom:1px solid #F26522;
+}
+/*管理员设置*/
+.MainUserList{
+	float:left;
+	margin:0px 5px 15px 0px;
+	width:524px;
+	background-color:#FFF;
+}
+#MainAddUserForm{
+	float:left;
+	margin:0px 0px 15px 0px;
+	width:265px;
+	border:1px solid #DDD;
+	background-color:#FFF;
+}
+.MainAddUserFormHead{
+	width:265px;
+	height:25px;
+	line-height:25px;
+	font-size:12px;
+	text-align:center;
+	background:url(../Images/add.gif) 65px 5px no-repeat;
+	border-bottom:1px solid #DDD;
+}
+/*统计*/
+#MainCountList{
+	margin:0px auto;
+	padding:30px 5px;
+	width:786px;
+	border:1px solid #DDD;
+	background-color:#FFF;
+}
+.MainCountHead{
+	margin:0px auto;
+	padding:0px 5px 0px 10px;
+	display:block;
+	width:730px;
+	height:25px;
+	line-height:25px;
+	font-weight:bold;
+	background-color:#F5F5F5;
+	border-bottom:1px solid #DDD;
+}
+.MainCountBdoy{
+	margin:0px auto;
+	padding:10px 5px 20px 5px;
+	display:block;
+	width:735px;
+}
+.MainCountList{
+	float:left;
+	margin:0px 5px 1px 0px;
+	padding:0px 5px;
+	width:230px;
+	line-height:25px;
+	border-bottom:1px solid #EDEDED;
+}
+.MainCountClassList{
+	margin:0px 5px 1px 0px;
+	padding:0px 5px;
+	width:720px;
+	line-height:25px;
+	
+}
+.MainCountClassList_txt{
+	float:left;
+	width:250px;
+	line-height:25px;
+	border-bottom:1px solid #EDEDED;
+}
+/*百分比例*/
+.MainCountClassList_per{
+	float:left;
+	margin:7px;
+	width:455px;
+	height:5px;
+	line-height:5px;
+	background-color:#EDEDED;
+	font-size:0px;
+}
+.MainCountClassList_per_{
+	height:3px;
+	line-height:3px;
+	background-image:url(../Images/perbg.gif);
+	background-color:#8EBF00;
+	border:1px solid #5AB502;
+	font-size:0px;
+}
+/*统计按钮*/
+.MainCountSelectList a{
+	float:left;
+	margin:5px 5px 5px 0px;
+	padding:0px;
+	width:73px;
+	color:#FFF;
+	line-height:25px;
+	text-align:center;
+	background-color:#F8941D;
+	border:1px solid #FFF;	
+}
+.MainCountSelectList a:link{
+	color:#FFF;
+}
+.MainCountSelectList a:visited{
+	color:#FFF;
+}
+.MainCountSelectList a:actived{
+	color:#FFF;
+}
+.MainCountSelectList a:hover{
+	color:#444;
+	background-color:#EEEEEE;
+}
+.MainCountSelectForm{
+	display:block;
+	padding:4px 5px;
+	text-align:right;
+	border-top:1px dashed #DDD;
+}
+.CountBtn{
+	margin-right:20px;
+	padding:2px;
+	width:40px;
+	height:22px;
+	color:#FFF;
+	font-size:12px;
+	background:#F8941D;
+	border-top:1px solid #FBAF5D;
+	border-left:1px solid #FBAF5D;
+	border-right:1px solid #F26522;
+	border-bottom:1px solid #F26522;
+}
+/*提示*/
+.CountTip{
+	margin:0px auto 10px auto;
+	padding:4px 8px;
+	width:728px;
+	height:20px;
+	line-height:20px;
+	color:#666;
+	text-align:center;
+	border:1px dashed #409508;
+	background-color:#F7F5D1;
+}
